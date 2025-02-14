@@ -1,0 +1,159 @@
+:root { 
+    font-family: "Inter", sans-serif; 
+}
+@supports (font-variation-settings: normal) {
+  :root { font-family: "InterVariable", sans-serif; font-optical-sizing: auto; }
+}
+* {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    color: black;
+    text-decoration: none;
+}
+a:hover {
+    color: #90f;
+}
+.border {
+    border: 1px solid black;
+}
+body {
+    background-image: linear-gradient(#fff, #fff 80%, #90f8);
+    overflow: hidden;
+}
+header {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    width: 100vw;
+    height: 80px;
+}
+header nav:nth-child(1) {
+    padding-left: 20px;
+    width: 70%;
+}
+header nav:nth-child(2) {
+    padding-left: 20px;
+    width: 30%;
+}
+
+header > nav {
+    height: 100%;
+}
+main {
+    width: 100vw;
+    height: 100vh;
+}
+
+
+/* CLASSES */
+/* LEFT SIDE CONTAINER */
+.left-container {
+    width: 70%;
+}
+.my-titles {
+    height: 100vh;
+    padding-top: 80px;
+}
+.figma {
+    padding: 20px;
+}
+.figma img {
+    width: 100%;
+}
+.essay-text {
+    scrollbar-color: #fff0, #bbb;
+    overflow-y: scroll;
+    padding: 20px;
+    display: flex;
+    height: 100%;
+    align-items: flex-start;
+}
+.title {
+    padding: 20px;
+    display: flex;
+    height: 60%;
+    align-items: flex-end;
+}
+#intangible {
+    width: 90%;
+}
+.prompt {
+    padding: 20px;
+    border-top:1px solid black;
+    height: 40%; 
+}
+
+
+/* RIGHT SIDE CONTAINER */
+/* TOP */
+.right-container {
+    border-left: none;
+    width: 30%;
+}
+.my-links {
+    height: 100vh;
+    padding-top: 80px;
+}
+/* ROW */
+.essay-links {
+    width: 100%;
+    height: 60%;
+}
+.essay-links > div {
+    margin-left: -1px;
+    margin-top: -1px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: calc(50% + 1px);
+}
+.gradient-box {
+    background: linear-gradient(#90f8, #fff, #fff);
+    border-bottom: 1px solid black;
+    width: 100%;
+    transition: all 0.5s;
+}
+.gradient-box, .TLDR {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+}
+.essay {
+    font-size: 4em;
+    transform: rotate(90deg);
+}
+/* BOTTOM */
+.input-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 40%;
+}
+
+.flexc {
+    display: flex;
+    flex-direction: column;
+}
+.flexr {
+    display: flex;
+    flex-direction: row;
+}
+.align {
+    align-items: center;
+}
+.justify {
+    justify-content: center;
+}
+.arrow-back {
+    transform: scaleX(-0.25) scaleY(0.25);
+    
+}
