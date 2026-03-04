@@ -47,7 +47,7 @@ body {
     overflow: hidden;
 }
 main {
-    height: 100vh;
+    height: 100%;
     overflow: hidden;
 }
 
@@ -81,7 +81,7 @@ main {
 .layout-split {
     display: flex;
     width: 100vw;
-    height: 100vh;
+    height: 100%;
 }
 
 /* LEFT SIDE */
@@ -218,7 +218,7 @@ main {
     }
     body {
         /* overflow: auto; */
-        height: 100vh;
+        height: 100%;
         background-image: linear-gradient(#fff, #fff 80%, #90f8);
     }
     .attention {

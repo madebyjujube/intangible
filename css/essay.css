@@ -16,7 +16,7 @@
     overflow-y: auto;
     scrollbar-color: #fff0, #bbb;
     padding: 20px;
-    height: calc(100vh - var(--header-height));
+    height: calc(100% - var(--header-height));
 }
 
 .essay-body {
