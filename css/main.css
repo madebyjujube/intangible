@@ -4,7 +4,7 @@
     --color-border: #000;
     --header-height: 80px;
     --border-width: 1px;
-    --pad-full-width: 40px;
+    --pad-responsive: 40px;
     
     font-family: "Inter", sans-serif; 
 }
@@ -70,7 +70,7 @@ main {
     height: 100%;
 }
 .header-tagline {
-    padding-left: var(--pad-full-width);
+    padding-left: var(--pad-responsive);
 }
 
 /* MAIN LAYOUT */
@@ -82,7 +82,7 @@ main {
 
 /* LEFT SIDE */
 .logo-header {
-    padding: var(--pad-full-width);
+    padding: var(--pad-responsive);
     display: flex;
     height: 60%;
     align-items: flex-end;
@@ -104,7 +104,7 @@ main {
 }
 
 .guide-content {
-    padding: var(--pad-full-width);
+    padding: var(--pad-responsive);
     padding-right: 30%;
     height: 40%;
     overflow-y: auto;
@@ -231,8 +231,10 @@ main {
 }
 /* MOBILE RESPONSIVE */
 @media (max-width: 768px) {
+    :root {
+        --pad-responsive: 1em;
+    }
     body {
-        /* overflow: auto; */
         background-image: linear-gradient(#fff, #fff 80%, #90f8);
     }
     .attention {
