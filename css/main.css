@@ -41,8 +41,11 @@ a:hover {
     pointer-events: none;
     z-index: 1;
 }
-
+html {
+    height: 100%;
+}
 body {
+    height: 100%;
     background-image: linear-gradient(#fff, #fff 80%, #90f8);
     overflow: hidden;
 }
@@ -55,7 +58,7 @@ main {
 .site-header {
     display: flex;
     position: absolute;
-    width: 100vw;
+    width: 100%;
     height: var(--header-height);
     z-index: 10;
 }
@@ -80,7 +83,7 @@ main {
 /* MAIN LAYOUT */
 .layout-split {
     display: flex;
-    width: 100vw;
+    width: 100%;
     height: 100%;
 }
 
@@ -213,12 +216,8 @@ main {
 
 /* MOBILE RESPONSIVE */
 @media (max-width: 768px) {
-    html {
-        height: 100%;
-    }
     body {
         /* overflow: auto; */
-        height: 100%;
         background-image: linear-gradient(#fff, #fff 80%, #90f8);
     }
     .attention {
