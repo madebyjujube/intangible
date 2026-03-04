@@ -15,7 +15,7 @@
     flex: 1;
     overflow-y: auto;
     scrollbar-color: #fff0, #bbb;
-    padding: 20px;
+    padding: 2em var(--pad-full-width) 8em;
     height: calc(100% - var(--header-height));
 }
 
@@ -25,20 +25,22 @@
 }
 .essay-body p {
     font-size: 1.2em;
+    margin-bottom: 1em;
 }
 
 .essay-body h3 {
-    margin-top: 2em;
+    margin-top: 1em;
     margin-bottom: 0.5em;
-}
-
-.essay-body p {
-    margin-bottom: 1em;
 }
 
 /* Centered header variant for essay pages */
 .header-nav--centered {
     justify-content: center;
+}
+.header-nav--primary {
+    justify-content: flex-start;
+    width: 70%;
+    padding-left: var(--pad-full-width);
 }
 
 .nav-back {
@@ -54,8 +56,8 @@
 
 /* MOBILE ADJUSTMENTS FOR ESSAY PAGES */
 @media (max-width: 768px) {
-    .header-nav {
-        padding-left: 0;
+    :root {
+        --pad-full-width: 20px;
     }
     .site-header {
         background: linear-gradient(#90f8, #fff, #fff);

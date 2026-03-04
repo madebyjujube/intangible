@@ -4,6 +4,7 @@
     --color-border: #000;
     --header-height: 80px;
     --border-width: 1px;
+    --pad-full-width: 40px;
     
     font-family: "Inter", sans-serif; 
 }
@@ -67,17 +68,9 @@ main {
     display: flex;
     align-items: center;
     height: 100%;
-    padding-left: 20px;
 }
-
-.header-nav--primary {
-    width: 70%;
-}
-
-.header-nav--secondary {
-    width: 30%;
-    display: flex;
-    justify-content: space-between;
+.header-tagline {
+    padding-left: var(--pad-full-width);
 }
 
 /* MAIN LAYOUT */
@@ -88,6 +81,12 @@ main {
 }
 
 /* LEFT SIDE */
+.logo-header {
+    padding: var(--pad-full-width);
+    display: flex;
+    height: 60%;
+    align-items: flex-end;
+}
 .content-primary {
     overflow: hidden;
     width: 70%;
@@ -98,14 +97,6 @@ main {
     display: flex;
     flex-direction: column;
     height: 100%;
-    /* overflow-y: auto; */
-}
-
-.guide-header {
-    padding: 20px;
-    display: flex;
-    height: 60%;
-    align-items: flex-end;
 }
 
 #intangible {
@@ -113,10 +104,29 @@ main {
 }
 
 .guide-content {
-    padding: 20px;
+    padding: var(--pad-full-width);
     padding-right: 30%;
     height: 40%;
     overflow-y: auto;
+}
+
+/* GUIDE LIST GRID LAYOUT */
+.guide-header {
+    margin-bottom: 1.5em;
+}
+
+.guide-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.guide-list li {
+    display: grid;
+    grid-template-columns: 2ch 1fr; /* number column + text column */
+    gap: 0.5em;
+    align-items: baseline;
 }
 
 /* RIGHT SIDE */
@@ -214,6 +224,11 @@ main {
     background-color: rgba(140, 0, 255, 0.067);
 }
 
+@media (max-width: 1024px) {
+.logo-header {
+    align-items: center;
+}
+}
 /* MOBILE RESPONSIVE */
 @media (max-width: 768px) {
     body {
@@ -240,11 +255,12 @@ main {
         height: 70%;
         padding-top: 0;
     }
+    .logo-header {
+        background: linear-gradient(#90f8, #fff, #fff);
+    }
     
     .guide-header {
-        background: linear-gradient(#90f8, #fff, #fff);
         height: auto;
-        padding: 40px 20px 20px;
     }
     .panel-guide {
         height: 100%;
