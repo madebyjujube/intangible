@@ -3,78 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="src/favicon.ico" />
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/essay.css">
     <link rel="stylesheet" href="css/type.css">
     <title>TLDR</title>
 </head>
 <body>
-    <header class="border">
-        <nav class="flexc justify">
+    <header class="site-header">
+        <nav class="header-nav header-nav--primary header-nav--centered panel--bordered">
             <h2>*TLDR*</h2>
         </nav>
-        <nav class="flexc justify">
-            <a href="index.html">
-                <img class="arrow-back" src="assets/images/Arrow.svg" alt="An arrow indicating a call to action">
+        <nav class="header-nav header-nav--secondary header-nav--centered panel--bordered">
+            <a href="index.html" class="nav-back">
+                <img class="arrow-back" src="assets/images/Arrow.svg" alt="Back to home">
             </a>
         </nav>
     </header>
 
+    <main class="layout-split">
 
-    <main class="flexr">
+        <div class="content-primary panel--bordered">
 
-        <div class="left-container">
+            <section class="panel-essay panel--bordered panel--bordered">
 
-            <section class="flexc my-titles border">
-
-                <div class="flexc essay-text">
-                    <br><br>
-                    <h3>STATEMENT</h3>
-                    <br>
-                    
-                    <p>
-                        INTANGIBLE is an interactive audio archive that reimagines how we explore and share sound. Instead of passive, algorithm-driven streaming, users navigate a 3D graph where each node triggers a sound—creating a non-linear, exploratory listening experience. The project stems from a reflection on music's emotional universality, our innate tendency to imitate and remix, and the tensions between intellectual property laws and creative freedom.
-                    <br>
-                    <br>
-                        <strong>HOW TO USE:</strong> Enter a username to create or join a personal audio space. Record up to 5 seconds of sound, name your node, and upload it to the graph. Click any node to hear it play. Your contributions persist across sessions, building a collaborative web of sound that challenges traditional music consumption. The default "home" space contains starter sounds—explore there first, then create your own archive.
-                    <br>
-                    <br>
-                        This project questions who benefits from current music distribution models and whether free, collaborative access to sound can foster a more vibrant culture. By making the act of sharing music participatory and tangible, INTANGIBLE invites you to contribute to a collective exploration of sonic expression—beyond rented platforms and passive consumption.
-                    </p>
+                <div class="essay-scroll-container">
+                    <div class="essay-body">
+                        <h3>STATEMENT</h3>
+                        <p>
+                            INTANGIBLE is an interactive audio archive that reimagines how we explore and share sound. Instead of passive, algorithm-driven streaming, users navigate a 3D graph where each node triggers a sound—creating a non-linear, exploratory listening experience. The project stems from a reflection on music's emotional universality, our innate tendency to imitate and remix, and the tensions between intellectual property laws and creative freedom.
+                            <br><br>
+                            <strong>HOW TO USE:</strong> Enter a username to create or join a personal audio space. Record up to 5 seconds of sound, name your node, and upload it to the graph. Click any node to hear it play. Your contributions persist across sessions, building a collaborative web of sound that challenges traditional music consumption. The default "home" space contains starter sounds—explore there first, then create your own archive.
+                            <br><br>
+                            This project questions who benefits from current music distribution models and whether free, collaborative access to sound can foster a more vibrant culture. By making the act of sharing music participatory and tangible, INTANGIBLE invites you to contribute to a collective exploration of sonic expression—beyond rented platforms and passive consumption.
+                        </p>
+                    </div>
                 </div>
 
             </section>
 
         </div>
 
+        <div class="content-secondary panel--bordered">
 
-        <div class="right-container">
+            <section class="panel-links panel--bordered">
 
-            <section class="flexc my-links">
-
-                <div class="flexr essay-links">
-                    <div class="flexc">
-                        <div class="gradient-box"></div>
-                        <div class="TLDR">
+                <div class="links-grid panel--bordered">
+                    <div class="link-card link-card--visual panel--bordered">
+                        <div class="gradient-accent panel--bordered"></div>
+                        <div class="link-tldr">
                             <a class="tldr-link" href="tldr.html">
-                                <img src="assets/images/Star.svg" alt="a star shaped icon with 6 tips">
+                                <img src="assets/images/Star.svg" alt="TLDR - quick summary">
                             </a>
                         </div>
                     </div>
-                    <div class="flexc">
-                        <a class="essay" href="intangible.html"><p>READ</p></a>
+                    <div class="link-card link-card--essay panel--bordered">
+                        <a class="essay-link" href="intangible.html">
+                            <span class="essay-text-rotated">READ</span>
+                        </a>
                     </div>
                 </div>
 
-                <div class="input-page">
-                    <a class="open" href="medium.html">
-                        <img src="assets/images/Arrow.svg" alt="An arrow indicating a call to action">
+                <div class="link-cta panel--bordered">
+                    <a class="cta-button" href="https://madebyjujubegithubio-production.up.railway.app/">
+                        <img src="assets/images/Arrow.svg" alt="Enter the archive">
                     </a>
                 </div>
 
             </section>
 
         </div>
-
 
     </main>
     <footer></footer>
