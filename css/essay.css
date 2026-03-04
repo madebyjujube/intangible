@@ -15,7 +15,7 @@
     flex: 1;
     overflow-y: auto;
     scrollbar-color: #fff0, #bbb;
-    padding: 2em var(--pad-full-width) 8em;
+    padding: 2em var(--pad-responsive) 8em;
     height: calc(100% - var(--header-height));
 }
 
@@ -40,7 +40,7 @@
 .header-nav--primary {
     justify-content: flex-start;
     width: 70%;
-    padding-left: var(--pad-full-width);
+    padding-left: var(--pad-responsive);
 }
 
 .nav-back {
@@ -57,7 +57,7 @@
 /* MOBILE ADJUSTMENTS FOR ESSAY PAGES */
 @media (max-width: 768px) {
     :root {
-        --pad-full-width: 20px;
+        --pad-responsive: 1em;
     }
     .site-header {
         background: linear-gradient(#90f8, #fff, #fff);
